@@ -1,4 +1,11 @@
 
+/**
+ * Double ended linked queue implementation
+ * @author Jason Wu
+ *
+ * @param <T> generic data type
+ */
+
 public class DEQueue<T> implements QueueInterface<T> {
 	int numOfItems;
 	Node last, first;
