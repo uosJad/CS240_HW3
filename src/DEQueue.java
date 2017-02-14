@@ -78,7 +78,6 @@ public class DEQueue<T> implements QueueInterface<T> {
 		}
 		return temp;
 	}
-
 	@Override
 	public T getFront() {
 		return first.data;
