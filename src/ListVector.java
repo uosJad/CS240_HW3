@@ -1,7 +1,13 @@
 import java.util.Vector;
 
+/**
+ * Vector implementation of list
+ * @author Jason Wu
+ *
+ * @param <T> generic data type
+ */
 public class ListVector<T> implements ListInterface<T>{
-	Vector<T> v;
+	private Vector<T> v;
 	
 	public ListVector(){
 		v = new Vector<T>();
@@ -90,6 +96,12 @@ public class ListVector<T> implements ListInterface<T>{
 	@Override
 	public T[] lookAtAll() {
 		return (T[]) v.toArray();
+	}
+
+	@Override
+	public boolean removeAll() {
+		v.removeAllElements();
+		return true;
 	}
 
 }

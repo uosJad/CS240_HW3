@@ -1,9 +1,9 @@
 
 
 /**
- * 
- * @author Jason Wu
  * Interface of list ADT
+ * @author Jason Wu
+ * 
  * @param <T> generic data type
  */
 public interface ListInterface <T> {
@@ -36,6 +36,12 @@ public interface ListInterface <T> {
 	 * @return true if successful, else false
 	 */
 	public boolean remove(int index);
+	
+	/**
+	 * Removes all elements in list
+	 * @return true is successful, else false
+	 */
+	public boolean removeAll();
 	
 	/**
 	 * Replaces first occurrence of toReplace, with newEntry
